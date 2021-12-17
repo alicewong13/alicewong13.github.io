@@ -1,19 +1,43 @@
-import React from 'react';
+import React from 'react'
+import {
+  Problem,
+  Research,
+  Insights,
+  Concept,
+  Design,
+  Testing,
+  Future,
+} from './Content1'
+import './content.css'
 
-class Project1 extends React.Component {
-    
-    render() {
-        return (
-            <div>
-                <h2>About Page</h2>
-                <main>
-                    <p>This section contains information about...</p>
-                </main>
-            </div>
-        )
-    }
+function Project1() {
+  return (
+    <div>
+      <div className='content__header'>
+        <h1 className='page__title'>Spotify Desktop Redesign</h1>
+      </div>
+      <div>
+        <section>
+          <p>History</p>
+          <p>The challenge</p>
+          <p>The outcome</p>
+          <p>Deliverables</p>
+        </section>
+      </div>
+      <div>
+        <Problem />
+        <Research />
+        <Insights />
+        <Concept />
+        <Design />
+        <Testing />
+        <Future />
+        <section>
+          <p>Thank you to the team members who made this possible!</p>
+        </section>
+      </div>
+    </div>
+  )
 }
 
-
-
-export default Project1;
+export default Project1
